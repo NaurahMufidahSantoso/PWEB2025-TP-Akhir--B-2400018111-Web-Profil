@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profil Naurah</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<script src="validasi.js"></script>
+
+<body>
+  <header>
+    <h1>Profil Naurah Mufidah</h1>
+  </header>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#hobby">Hobby</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#message">Message</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="content-left">
+      <article id="about" class="about">
+        <h2>About Me</h2>
+        <p> Halo! Nama saya <strong>Naurah Mufidah Santoso</strong>, biasa dipanggil <strong>Naurah</strong>. Saya sedang menjalani studi <strong>S1 Informatika</strong> di <strong>Universitas Ahmad Dahlan, Yogyakarta</strong>. Saya berasal dari <strong>Ternate, Maluku Utara</strong>, kota kepulauan yang kaya budaya dan penuh cerita sejarah.
+            Ketertarikan saya pada dunia informatika berawal dari rasa penasaran terhadap bagaimana aplikasi dan situs web bekerja. Saya selalu terkesan bagaimana teknologi bisa menyelesaikan masalah sehari-hari, bahkan yang sederhana sekalipun. Dari situlah saya menyadari bahwa informatika bukan sekadar tentang komputer, tapi tentang <strong>menciptakan solusi kreatif melalui logika dan inovasi</strong>.
+            Bagi saya, menjadi bagian dari dunia teknologi bukan hanya tentang coding — tapi tentang <em>berkontribusi pada masa depan yang lebih cerdas dan efisien</em>. Saya percaya bahwa perempuan juga bisa bersinar di dunia teknologi dan membuktikan bahwa kreativitas dan kecerdasan tidak mengenal gender.
+            Di luar dunia akademik, saya senang belajar hal baru, eksplorasi desain antarmuka, dan menulis untuk berbagi pengetahuan. Saya percaya bahwa proses belajar tidak akan pernah selesai, dan itu yang membuat perjalanan saya di dunia informatika menjadi menyenangkan.
+            Untuk selera makan, saya sangat suka <strong>Nasi Goreng</strong> dan paling suka menikmati <strong>Jus Alpukat</strong> saat butuh penyegar di tengah kesibukan.</p>
+      </article>
+
+      <article id="hobby" class="hobby">
+        <h2>Hobby</h2>
+        <ul class="hobby-list">
+          <li>Membaca Buku</li>
+          <li>Menonton Film</li>
+          <li>Dengerin Podcast</li>
+          <li>Mencoba Hal Baru</li>
+        </ul>
+      </article>
+
+      <article id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:naurahmufidahsantoso@gmail.com">naurahmufidahsantoso@gmail.com</a></li>
+          <li>Instagram: <a href="https://instagram.com/naurahmfd">@naurahmfd</a></li>
+          <li>Github: <a href="https://github.com/NaurahMufidahSantoso">NaurahMufidahSantoso</a></li>
+        </ul>
+      </article>
+
+    <article id="message" class="message">
+        <h2>Kirim Pesan</h2>
+        <form action="proses.php" method="POST" onsubmit="return validateForm()">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda..." required></textarea>
+        <button type="submit">Kirim Pesan</button>
+        </form>
+    </article>
+    </div>
+
+    <aside class="hero">
+      <div class="image">
+        <img src="profil.jpg" alt="Naurah's Photo">
+      </div>
+      <div class="content">
+        <h2>Hallo, Saya <span class="highlight">Naurah</span></h2>
+        <h3>Mahasiswa S1 Informatika</h3>
+        <p><br>Saya adalah mahasiswa Informatika yang memiliki ketertarikan pada dunia pengembangan aplikasi dan cara teknologi bekerja dalam kehidupan sehari-hari</p>
+ <br> <div class="social-icons">
+          <a href="mailto:naurahmufidahsantoso@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://instagram.com/naurahmfd"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/NaurahMufidahSantoso"><i class="fab fa-github"></i></a>
+        </div>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Naurah Mufidah Santoso ✉ naurahmufidahsantoso@gmail.com</p>
+  </footer>
+</body>
+</html>
